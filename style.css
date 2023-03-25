@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Global Varibales */
+
+:root {
+  --main-background-color: #131415;
+  --main-text-color: #fff;
+  --secondaryTextColor-dark: #cbc8d0;
+  --main-link-color: #0da2b8;
+  --mainLinkColor-dark: rgb(30, 190, 214);
+  --main-border-color: rgb(218, 218, 218);
+  --mainBorderColor-dark: #2b3031;
+}
+
+/*Body*/
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  height: auto;
+  background: var(--main-background-color);
+  color: var(--main-text-color);
+}
+
+.main-container {
+  max-width: 1200px;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  margin: 0px auto;
+  height: auto;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.right-side-wrapper {
+  width: 40%;
+}
+
+.left-side-wrapper {
+  width: 40%;
+}
+
+section {
+  margin: 25px;
+}
+
+h1,
+h2,
+h3 {
+  padding: 8px 2px;
+}
+
+p {
+  line-height: 1.5em;
+}
+/* nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+li {
+  list-style: none;
+  line-height: 1.5em;
+}
+
+.skills ul li {
+  padding-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.hero img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* box-sizing: content-box; */
+}
+
+/* Links  */
+
+a {
+  color: var(--secondaryTextColor-dark);
+  /* text-decoration: none; */
+}
+
+a:hover {
+  color: var(--main-link-color);
+}
