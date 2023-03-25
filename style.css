@@ -79,7 +79,13 @@ li {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
+  max-width: 100%;
+
   /* box-sizing: content-box; */
+}
+
+.about-me p {
+  color: var(--secondaryTextColor-dark);
 }
 
 /* Links  */
