@@ -84,7 +84,10 @@ li {
   /* box-sizing: content-box; */
 }
 
-.about-me p {
+.about-me p,
+.work-history p,
+.skills ul li,
+.blog-posts ul li p {
   color: var(--secondaryTextColor-dark);
 }
 
