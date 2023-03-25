@@ -74,6 +74,10 @@ li {
   font-size: 1.2rem;
 }
 
+.skills ul li i {
+  color: var(--main-text-color);
+}
+
 .hero img {
   width: 150px;
   height: 150px;
