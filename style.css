@@ -88,6 +88,23 @@ li {
   /* box-sizing: content-box; */
 }
 
+.title-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 42px;
+}
+
+.short-bio {
+  /* font-size: 20px; */
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
 .about-me p,
 .work-history p,
 .skills ul li,
@@ -104,4 +121,14 @@ a {
 
 a:hover {
   color: var(--main-link-color);
+}
+
+@media only screen and (max-width: 900px) {
+  .main-container,
+  .right-side-wrapper,
+  .left-side-wrapper {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
