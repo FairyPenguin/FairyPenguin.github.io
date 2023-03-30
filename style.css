@@ -64,14 +64,24 @@ p {
   align-items: center;
 } */
 
+.link-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
 .contact-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   font-size: 1.2rem;
-  padding: 0px 0px 0px px;
+  line-height: 2;
 }
 
 .contact-links i {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #0da2b8;
+  /* padding-left: 5px; */
 }
 
 li {
@@ -80,8 +90,11 @@ li {
 }
 
 .skills ul li {
-  padding-bottom: 8px;
-  font-size: 1.2rem;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border: 1px solid var(--mainBorderColor-dark);
+  border-radius: 5px;
+  margin-bottom: 8px;
 }
 
 .skills ul li i {
