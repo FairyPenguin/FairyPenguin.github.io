@@ -1,4 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"); */
+
+/* English Font ==> [IBM Plex Sans]*/
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap");
+
+/* Arabic Font ==> [IBM Plex Sans Arabic] */
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap");
+
+/* Reset */
 
 * {
   margin: 0;
@@ -20,14 +34,23 @@
 /*Body*/
 
 body {
-  font-family: "Roboto Condensed", sans-serif;
+  /* font-family: "Roboto Condensed", sans-serif; */
+  /* font-family: "Source Code Pro", monospace; */
+  /* font-family: "Fira Code", monospace; */
+
+  font-family: "IBM Plex Sans", sans-serif;
+
   height: auto;
   background: var(--main-background-color);
   color: var(--main-text-color);
 }
 
+:lang(ar) {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
 .main-container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   display: flex;
   align-content: center;
   justify-content: space-evenly;
@@ -35,6 +58,33 @@ body {
   height: auto;
   flex-wrap: wrap;
   padding-top: 50px;
+  margin-top: px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--main-red);
+  box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+  z-index: 10;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list a {
+  display: block;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 .right-side-wrapper {
@@ -58,11 +108,6 @@ h3 {
 p {
   line-height: 1.5em;
 }
-/* nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
 
 .line-break {
   background-color: var(--mainBorderColor-dark);
@@ -96,7 +141,7 @@ li {
 
 .skills ul li {
   padding: 8px 16px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border: 1px solid var(--mainBorderColor-dark);
   border-radius: 5px;
   margin-bottom: 8px;
@@ -104,6 +149,12 @@ li {
 
 .skills ul li i {
   color: var(--main-text-color);
+}
+
+.skills ul li i:hover {
+  color: var(--main-link-color);
+  font-weight: bold;
+  font-size: 1.8rem;
 }
 
 .hero img {
@@ -137,7 +188,8 @@ li {
 .work-history p,
 .skills ul li,
 .blog-posts ul li p {
-  color: var(--secondaryTextColor-dark);
+  color: hsl(0deg, 0%, 100%);
+  /* color: var(--main-text-color); */
 }
 
 .about-me {
@@ -157,7 +209,7 @@ li {
 
 .projects-full-preview-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: auto auto auto;
   grid-gap: 4rem;
   width: 100%;
   max-width: 1200px;
@@ -175,11 +227,13 @@ li {
 
 a {
   color: var(--secondaryTextColor-dark);
-  /* text-decoration: none; */
+  text-decoration: none;
 }
 
 a:hover {
   color: var(--main-link-color);
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 900px) {
@@ -198,3 +252,30 @@ a:hover {
     margin-bottom: 1.5rem;
   }
 }
+
+/*---------------- SCROLLBAR Styles-------------------- */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--secondaryTextColor-dark);
+  box-shadow: 0 0 10px #000 inset;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--mainLinkColor-dark);
+  border-radius: 20px;
+  height: 100px;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-top: 60px solid hsla(219, 100%, 50%, 1)
+    /*or any height and color you want*/;
+}
+/* ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--main-link-color);
+  border-radius: 20px;
+} */
