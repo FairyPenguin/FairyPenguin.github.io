@@ -11,13 +11,3 @@
 //   .then((data) => {
 //     console.log(data);
 //   });
-
-let NormFunc = function () {
-  return function () {
-    return { keyword: "toArrowFunc" };
-  };
-};
-
-let Arrow = () => () => ({ keyword: "toArrowFunc" });
-
-
