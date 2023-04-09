@@ -113,7 +113,7 @@ header:hover {
 .nav {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 70%;
   z-index: 10;
 }
 
@@ -137,6 +137,26 @@ header:hover {
   color: var(--main-link-color);
   text-decoration: underline;
   font-weight: bold;
+}
+
+.dark-mode-toggle {
+  z-index: 100;
+  display: block;
+  background: transparent;
+  /* border-radius: 5px; */
+  cursor: pointer;
+  opacity: 0.7;
+  /* color: var(--secondaryTextColor-dark); */
+  /* color: hsl(0deg, 0%, 100%); */
+  border: none;
+  padding: 0.25rem;
+  outline: none;
+}
+
+.dark-mode-toggle:hover {
+  opacity: 1;
+  /* color: hsl(0deg, 0%, 100%); */
+  /* fill: currentColor; */
 }
 
 section {
@@ -208,6 +228,9 @@ li {
 .skills ul li:hover {
   border: 1px solid var(--mainLinkColor-dark);
   /* font-weight: bold; */
+  /* scale: 1.1; */
+  /* outline: 1px auto var(--main-background-color);
+  outline-offset: 2px; */
 }
 
 .skills ul li i {
@@ -216,8 +239,8 @@ li {
 
 .skills ul li i:hover {
   color: var(--main-link-color);
-  font-weight: bold;
-  font-size: 1.8rem;
+  /* font-weight: bold;
+  font-size: 1.8rem; */
 }
 
 .hero img {
@@ -312,9 +335,14 @@ li {
   padding: 0.5rem;
 }
 
+.full-about-me-desc a {
+  text-decoration: none;
+  color: var(--main-link-color);
+}
+
 .full-about-me-desc:hover {
   border: 1px solid var(--mainLinkColor-dark);
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .projects-full-preview-grid {
