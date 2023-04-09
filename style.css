@@ -340,6 +340,15 @@ li {
   color: var(--main-link-color);
 }
 
+.full-about-me-desc a:hover {
+  text-decoration: underline;
+}
+
+.Here-span:hover {
+  font-size: 1.6rem;
+  /* letter-spacing: 1.5px; */
+}
+
 .full-about-me-desc:hover {
   border: 1px solid var(--mainLinkColor-dark);
   /* font-weight: bold; */
