@@ -227,10 +227,7 @@ li {
 
 .skills ul li:hover {
   border: 1px solid var(--mainLinkColor-dark);
-  /* font-weight: bold; */
-  /* scale: 1.1; */
-  /* outline: 1px auto var(--main-background-color);
-  outline-offset: 2px; */
+  animation: arrow 2s infinite 2s;
 }
 
 .skills ul li i {
@@ -239,8 +236,27 @@ li {
 
 .skills ul li i:hover {
   color: var(--main-link-color);
-  /* font-weight: bold;
-  font-size: 1.8rem; */
+}
+
+.skills ul li:hover i {
+  color: var(--main-link-color);
+  animation: arrow 2s infinite 1s;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateX(-25px);
+    color: var(--main-link-color);
+  }
+
+  50% {
+    color: var(--main-text-color);
+  }
+
+  100% {
+    transform: translateX(5px);
+    color: var(--main-link-color);
+  }
 }
 
 .hero img {
