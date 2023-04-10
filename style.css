@@ -448,7 +448,7 @@ li {
   width: 50vw;
   height: auto;
   max-width: 500px;
-  min-width: 300px;
+  min-width: 350px;
   margin: 2rem auto;
   padding: 0.5rem 1rem;
   background-color: #0a0a0b;
@@ -457,6 +457,23 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+@media screen and (max-width: 480px) {
+  .form-container {
+    width: 355px;
+    height: auto;
+    max-width: 500px;
+    min-width: 350px;
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    background-color: #0a0a0b;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .form-container:hover {
