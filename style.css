@@ -392,7 +392,7 @@ p {
 } */
 
 .skills ul li:hover i {
-  animation: arrow 0.5s 1 0.5s;
+  animation: arrow 0.3s 1 0.5s;
   color: var(--main-link-color);
 }
 
@@ -455,7 +455,7 @@ p {
 }
 
 .info:hover i {
-  animation: arrow 0.5s 1 0.5s;
+  animation: arrow 0.3s 1 0.5s;
   color: var(--main-link-color);
 }
 
@@ -525,7 +525,7 @@ fieldset {
 label {
   display: block;
   margin: 0.5rem 0.2rem 0.5rem 0.2rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 #first-name,
@@ -548,14 +548,19 @@ label {
   font-size: 1.25rem;
 }
 
-/* #first-name:focus {
-  border: 1px solid var(--main-link-color);
+#first-name:focus {
+  border-bottom: 1px solid var(--main-link-color);
 }
 
-#email:focus {
-  border: 1px solid var(--main-link-color);
+.personal-info:focus-within label[for="first-name"] {
+  color: var(--mainLinkColor-dark);
 }
 
+/* #email:focus {
+  border: 1px solid var(--main-link-color);
+} */
+
+/* 
 #subject:focus {
   border: 1px solid var(--main-link-color);
 } */
