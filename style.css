@@ -454,6 +454,21 @@ p {
   border-top: 1px solid var(--main-link-color);
 }
 
+.info:hover i {
+  animation: arrow 0.5s 1 0.5s;
+  color: var(--main-link-color);
+}
+
+@keyframes info-card {
+  0% {
+    transform: translateX(50px);
+  }
+
+  100% {
+    transform: translateX(-100px);
+  }
+}
+
 .info a {
   text-decoration: none;
   color: var(--secondaryTextColor-dark);
@@ -461,10 +476,9 @@ p {
   background-color: transparent;
 }
 
-.info i {
-  animation: arrow 0.5s 1 0.5s;
+/* .info i {
   color: var(--main-link-color);
-}
+} */
 
 .card-img {
   width: 100%;
