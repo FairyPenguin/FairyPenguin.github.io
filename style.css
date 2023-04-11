@@ -637,6 +637,14 @@ input[type="submit"]:hover {
   }
 } */
 
+/* This media query for {navabr} and screen with max-width:768px */
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .projects-full-preview-grid {
     display: grid;
