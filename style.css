@@ -433,7 +433,7 @@ p {
 
 .card {
   box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
-  background-color: #2b2c2c;
+  background-color: rgb(10, 10, 11);
   border-radius: 6px;
   overflow: hidden;
 }
@@ -444,15 +444,19 @@ p {
 
 .info {
   padding: 20px;
-  border-top: 1px solid #000;
+  border-top: 1px solid var(--mainBorderColor-dark);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.info:hover {
+  border-top: 1px solid var(--main-link-color);
+}
+
 .info a {
   text-decoration: none;
-  color: var(--main-link-color);
+  color: var(--secondaryTextColor-dark);
   font-weight: bold;
   background-color: transparent;
 }
