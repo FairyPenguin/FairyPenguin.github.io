@@ -153,6 +153,17 @@ header:hover {
   outline: none;
 }
 
+.inner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-wrapper > span {
+  font-size: 1.2rem;
+  color: var(--main-text-color);
+}
+
 .dark-mode-toggle:hover {
   opacity: 1;
   /* color: hsl(0deg, 0%, 100%); */
