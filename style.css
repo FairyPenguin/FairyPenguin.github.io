@@ -57,7 +57,7 @@ body {
 header {
   display: flex;
   align-items: center;
-  height: 60px;
+  height: 3.75rem;
   width: auto;
   padding: 5px 22px;
   margin-top: 20px;
@@ -670,6 +670,33 @@ footer {
     margin: 0.5rem 0.2rem 0.5rem 0.2rem;
     font-size: 1rem;
   }
+
+  .main-container {
+    max-width: 800px;
+    padding-top: 0px;
+    margin: 0px auto;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.75rem;
+    width: auto;
+    padding: 5px 1rem;
+    margin-top: 0.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+  }
+
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.2rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -726,6 +753,7 @@ footer {
 
 ::-webkit-scrollbar {
   width: 12px;
+  background-color: #aaa;
 }
 ::-webkit-scrollbar-track {
   background-color: var(--secondaryTextColor-dark);
@@ -735,15 +763,26 @@ footer {
 ::-webkit-scrollbar-thumb {
   background-color: var(--mainLinkColor-dark);
   border-radius: 20px;
-  height: 100px;
+  height: 80px;
+
   scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: transparent;
-  border-top: 60px solid hsla(219, 100%, 50%, 1)
+  border-top: 50px solid hsla(219, 100%, 50%, 1);
+  border-bottom: 50px solid hsla(219, 100%, 50%, 1)
     /*or any height and color you want*/;
+  border-left: -1px solid var(--secondaryTextColor-dark);
+  border-right: -1px solid var(--secondaryTextColor-dark);
 }
+
+/* ::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-top: 50px solid hsla(219, 100%, 50%, 1);
+  border-bottom: 50px solid hsla(219, 100%, 50%, 1)
+} */
+
 /* ::-webkit-scrollbar-thumb:hover {
   background-color: var(--main-link-color);
   border-radius: 20px;
