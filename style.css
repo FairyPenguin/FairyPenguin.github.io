@@ -490,18 +490,18 @@ p {
 /*  =========FORM=======  */
 
 .form-container {
-  width: 50vw;
+  width: clamp(275px, 50%, 500px);
   height: auto;
-  max-width: 500px;
-  min-width: 350px;
+  /* max-width: 500px;
+  min-width: 350px; */
   margin: 2rem auto;
   padding: 0.5rem 1rem;
   background-color: #0a0a0b;
   border-radius: 0.5rem;
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; */
 }
 
 .form-container:hover {
@@ -566,7 +566,7 @@ label {
 } */
 
 textarea {
-  min-width: 300px;
+  /* min-width: 250px; */
   min-height: 175px;
   max-width: 100%;
   height: 190px;
@@ -633,9 +633,9 @@ input[type="submit"]:hover {
   }
 }
 
-@media screen and (min-width: 360px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .title {
-    font-size: 1rem;
+    font-size: clamp(1.5rem, 50%, 2.5rem);
   }
 
   .short-bio {
@@ -643,23 +643,9 @@ input[type="submit"]:hover {
   }
 
   .line-break {
-    width: clamp(300px, 50%, 800px);
+    width: clamp(280px, 50%, 800px);
   }
 
-  .form-container {
-    /* width: 330px; */
-    height: auto;
-    max-width: 500px;
-    min-width: 320px;
-    margin: 2rem auto;
-    padding: 0.5rem 0.5rem;
-    background-color: #0a0a0b;
-    border-radius: 0.5rem;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
-  }
   label {
     display: block;
     margin: 0.5rem 0.2rem 0.5rem 0.2rem;
@@ -688,22 +674,30 @@ input[type="submit"]:hover {
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
-    width: clamp(35ch, 20%, 60ch);
+    width: clamp(30ch, 50%, 60ch);
     /* width: 100%; */
     /* width: clamp(45ch, 50%, 60ch); */
   }
 
-  .nav {
+  /* Nav on/off over-flow test */
+
+  /* .nav {
     display: none;
-  }
+  } */
+
+  /* header on/off over-flow test */
 
   /* header {
     display: none;
-  }
+  } */
 
-  .hero {
+  /* hero on/off over-flow test */
+
+  /* .hero {
     display: none;
   } */
+
+  /* about-me on/off over-flow test */
 
   /* .about-me {
     display: none;
