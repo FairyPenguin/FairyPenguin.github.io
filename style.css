@@ -775,7 +775,6 @@ footer {
   background-color: var(--mainLinkColor-dark);
   border-radius: 20px;
   height: 80px;
-
   scroll-behavior: smooth;
 }
 
@@ -784,8 +783,6 @@ footer {
   border-top: 50px solid hsla(219, 100%, 50%, 1);
   border-bottom: 50px solid hsla(219, 100%, 50%, 1)
     /*or any height and color you want*/;
-  border-left: -1px solid var(--secondaryTextColor-dark);
-  border-right: -1px solid var(--secondaryTextColor-dark);
 }
 
 /* ::-webkit-scrollbar-thumb {
