@@ -383,8 +383,9 @@ p {
   border: 1px solid var(--mainBorderColor-dark);
   border-radius: 5px;
   margin-bottom: 0.4rem;
-  word-wrap: break-word;
-  word-break: break-all;
+  line-height: 2rem;
+  /* word-wrap: break-word; */
+  /* word-break: break-all; */
 }
 
 .skills ul li:hover {
@@ -657,10 +658,28 @@ footer {
 
 /* This media query for {navabr} and screen with max-width:768px */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 675px) {
   .nav {
     display: none;
   }
+
+  /* .nav-list {
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    z-index: 2;
+    justify-content: space-between;
+    padding-bottom: 0.2rem;
+    margin: 0;
+  } */
+
+  /* .nav-list a {
+    padding: 12px;
+    line-height: 1px;
+  } */
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
