@@ -636,35 +636,45 @@ footer {
 
 /* ===============================Media Queries=============================== */
 
-/* @media only screen and (max-width: 900px) {
-  .main-container,
-  .right-side-wrapper,
-  .left-side-wrapper {
-    width: 90%;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .title-container {
+/* This media query for {Hamburger Menu} and screen with max-width:768px */
+
+@media screen and (max-width: 768px) {
+  .navbar-toggler {
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    z-index: 2;
   }
-} */
 
-/* This media query for {navabr} and screen with max-width:768px */
+  .bar {
+    height: 6px;
+    width: 100%;
+    background-color: var(--main-text-color);
+    border-radius: 12px;
+  }
 
-@media screen and (max-width: 675px) {
+  .nav-list {
+    display: none;
+  }
+}
+
+/* This media query for {navabr} and screen with max-width:675px */
+
+@media screen and {
   /* .nav {
     display: none;
   } */
 
   body {
-    overflow-y: hidden !important;
+    overflow-y: hidden;
   }
   .main-container {
-    overflow-y: hidden !important;
+    overflow-y: hidden;
   }
 
   .Logo-text {
