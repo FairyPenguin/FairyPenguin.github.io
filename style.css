@@ -793,14 +793,14 @@ footer {
 ::-webkit-scrollbar-thumb {
   background-color: var(--mainLinkColor-dark);
   border-radius: 20px;
-  height: 80px;
+  height: 100px;
   scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: transparent;
-  border-top: 50px solid hsla(219, 100%, 50%, 1);
-  border-bottom: 50px solid hsla(219, 100%, 50%, 1)
+  border-top: 60px solid hsla(219, 100%, 50%, 1);
+  border-bottom: 60px solid hsla(219, 100%, 50%, 1)
     /*or any height and color you want*/;
 }
 
