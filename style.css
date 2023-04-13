@@ -782,7 +782,7 @@ footer {
 /*---------------- SCROLLBAR Styles-------------------- */
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 13px;
   background-color: #aaa;
 }
 ::-webkit-scrollbar-track {
