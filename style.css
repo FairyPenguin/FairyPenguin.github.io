@@ -654,9 +654,11 @@ footer {
 /* This media query for {Hamburger Menu} and screen with max-width:768px */
 
 @media screen and (max-width: 768px) {
-  body {
+  /* This can stop the touch functionality on mobile screens */
+
+  /* body {
     touch-action: none;
-  }
+  } */
 
   .nav {
     display: flex;
@@ -712,7 +714,7 @@ footer {
   }
 
   .bar {
-    height: 8px;
+    height: 6px;
     width: 100%;
     background-color: var(--main-text-color);
     border-radius: 12px;
