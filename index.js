@@ -1,3 +1,28 @@
+const toggle = document.getElementById("toggle");
+const body = document.querySelector("body");
+
+toggle.addEventListener("change", overflowDisable);
+
+function overflowDisable() {
+  if (toggle.checked) {
+    body.classList.add("nav-open");
+  } else {
+    body.classList.remove("nav-open");
+  }
+}
+
+
+// const toggle = document.getElementById("toggle");
+// const body = document.querySelector("body");
+
+// toggle.addEventListener("change", function () {
+//   if (this.checked) {
+//     body.classList.add("nav-open");
+//   } else {
+//     body.classList.remove("nav-open");
+//   }
+// });
+
 // fetch(
 //   "https://newsapi.org/v2/everything?" +
 //     "q=linux&" +

@@ -32,6 +32,11 @@
 
 /*Body*/
 
+.nav-open {
+  overflow-y: hidden;
+  height: 100vh;
+}
+
 body {
   /* font-family: "Roboto Condensed", sans-serif; */
   /* font-family: "Source Code Pro", monospace; */
@@ -640,6 +645,12 @@ footer {
 
 /* ===============================Media Queries=============================== */
 
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .hamburger {
+    display: none;
+  }
+}
+
 /* This media query for {Hamburger Menu} and screen with max-width:768px */
 
 @media screen and (max-width: 768px) {
@@ -649,11 +660,9 @@ footer {
 
   .nav {
     display: flex;
-    overflow: hidden;
   }
 
   .nav-list {
-    overflow: hidden;
     position: fixed;
     left: 0;
     top: 0px;
@@ -691,6 +700,17 @@ footer {
     z-index: 2;
   }
 
+  .hamburger {
+    position: absolute;
+    bottom: 0.25rem;
+    left: -0.3rem;
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.5s ease-in;
+  }
+
   .bar {
     height: 8px;
     width: 100%;
@@ -704,6 +724,14 @@ footer {
     display: flex;
   }
 
+  .toggle-check-box:checked ~ nav .navbar-toggler .hamburger {
+    opacity: 100;
+  }
+  .toggle-check-box:checked ~ nav .navbar-toggler .bar {
+    display: none;
+  }
+
+  /*   
   .toggle-check-box:checked ~ nav .navbar-toggler .bar:nth-child(1) {
     position: absolute;
     transform: rotate(45deg);
@@ -715,7 +743,7 @@ footer {
 
   .toggle-check-box:checked ~ nav .navbar-toggler .bar:nth-child(3) {
     transform: rotate(-45deg);
-  }
+  } */
 
   .nav-list {
     display: none;
