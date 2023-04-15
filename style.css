@@ -636,7 +636,7 @@ footer {
 
 .copyright {
   text-align: center;
-  color: var(--main-text-color);
+  color: var(--secondaryTextColor-dark);
   border-top: 1px solid var(--mainBorderColor-dark);
   margin: 4rem 0px 0px 0px;
   padding: 1.5rem 0;
@@ -644,7 +644,7 @@ footer {
 
 .copyright a {
   text-decoration: none;
-  color: var(--mainLinkColor-dark);
+  color: inherit;
 }
 
 /* FOOOOOOOOOOTER  */
