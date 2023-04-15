@@ -641,6 +641,12 @@ footer {
   margin: 4rem 0px 0px 0px;
   padding: 1.5rem 0;
 }
+
+.copyright a {
+  text-decoration: none;
+  color: var(--mainLinkColor-dark);
+}
+
 /* FOOOOOOOOOOTER  */
 
 /* ===============================Media Queries=============================== */
