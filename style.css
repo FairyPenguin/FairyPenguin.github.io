@@ -53,6 +53,32 @@ body {
   font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
+/* .projects-container {
+  margin: 0px auto;
+} */
+
+.project-cardo {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  /* flex-direction: row; */
+  /* justify-content: flex-end; */
+}
+
+figure {
+  flex: 1;
+}
+
+.project-image {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.project-content {
+  flex: 1;
+}
+
 .main-container {
   max-width: 800px;
   padding-top: 5px;
@@ -635,11 +661,12 @@ footer {
 }
 
 .copyright {
-  text-align: center;
+  text-align: left;
   color: var(--secondaryTextColor-dark);
   border-top: 1px solid var(--mainBorderColor-dark);
   margin: 4rem 0px 0px 0px;
-  padding: 1.5rem 0;
+  padding: 1.5rem 0.8rem;
+  font-size: 1rem;
 }
 
 .copyright a {
