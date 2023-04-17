@@ -64,7 +64,7 @@ body {
   border: 1px solid var(--mainBorderColor-dark);
   border-radius: 5px;
   padding: 0.4rem;
-  box-shadow: 6px 6px 5px var(--mainBorderColor-dark);
+  box-shadow: 6px 6px 5px #0a0a0b;
   margin-bottom: 2.6rem;
 }
 
