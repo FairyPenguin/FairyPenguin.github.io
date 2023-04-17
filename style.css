@@ -60,11 +60,12 @@ body {
 .project-cardo {
   display: flex;
   flex-direction: row;
+  /* align-items: center; */
   gap: 1.5rem;
   border: 1px solid var(--mainBorderColor-dark);
   border-radius: 5px;
   padding: 0.5rem;
-  box-shadow: 16px 6px 5px #060606;
+  box-shadow: 3px 3px 5px #000000;
   margin-bottom: 2.6rem;
 }
 
@@ -72,6 +73,14 @@ body {
   .project-cardo {
     display: flex;
     flex-direction: column;
+  }
+
+  .project-links {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
   }
 }
 
@@ -96,7 +105,7 @@ figure {
 }
 
 .proj-title {
-  padding: 2px 2px;
+  padding: 4px 2px;
 }
 
 .proj-description {
@@ -119,6 +128,8 @@ figure {
 .project-links {
   display: flex;
   align-items: center;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 .project-links a {
