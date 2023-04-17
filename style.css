@@ -63,9 +63,22 @@ body {
   gap: 1.5rem;
   border: 1px solid var(--mainBorderColor-dark);
   border-radius: 5px;
-  padding: 0.4rem;
-  box-shadow: 6px 6px 5px #0a0a0b;
+  padding: 0.5rem;
+  box-shadow: 16px 6px 5px #060606;
   margin-bottom: 2.6rem;
+}
+
+@media screen and (max-width: 786px) {
+  .project-cardo {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.project-cardo:hover {
+  border: 1px solid var(--main-link-color);
+  box-shadow: 16px 16px 5px #111213;
+  background-color: #131415;
 }
 
 figure {
@@ -93,12 +106,14 @@ figure {
 
 .project-tech-stack {
   margin-bottom: 1.5rem;
+  font-size: 0.8rem;
+  width: clamp(295px, 50%, 700px);
 }
 
 .project-tech-stack span {
   border: 1.5px solid var(--mainBorderColor-dark);
-  padding: 0.3rem;
-  border-radius: 5px;
+  padding: 0.4rem;
+  border-radius: 4px;
 }
 
 .project-links {
@@ -112,9 +127,15 @@ figure {
   font-size: 1.2rem;
 }
 
+.project-links a:hover {
+  text-decoration: underline;
+  color: var(--main-link-color);
+  font-weight: bold;
+}
+
 .project-links i {
   font-size: 1rem;
-  padding-top: 4px;
+  padding-top: 5px;
 }
 
 .project-links:hover i {
