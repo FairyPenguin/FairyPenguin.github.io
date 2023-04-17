@@ -60,7 +60,9 @@ body {
 .project-cardo {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 1.5rem;
+  /* align-items: center; */
+  /* justify-content: center; */
   /* flex-direction: row; */
   /* justify-content: flex-end; */
 }
@@ -77,6 +79,37 @@ figure {
 
 .project-content {
   flex: 1;
+}
+
+.proj-title {
+  padding: 2px 2px;
+}
+
+.proj-description {
+  margin: 1rem 0;
+  line-height: 1.8;
+}
+
+.project-tech-stack {
+  margin-bottom: 1.5rem;
+}
+
+.project-tech-stack span {
+  border: 1.5px solid var(--mainBorderColor-dark);
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+.project-links {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: var(--main-text-color);
 }
 
 .main-container {
@@ -665,11 +698,11 @@ footer {
   color: var(--secondaryTextColor-dark);
   border-top: 1px solid var(--mainBorderColor-dark);
   margin: 4rem 0px 0px 0px;
-  padding: 1.5rem 0.8rem;
+  padding: 1.5rem 1rem;
   font-size: 1rem;
 }
 
-.copyright a {
+.built-with a {
   text-decoration: none;
   color: inherit;
 }
