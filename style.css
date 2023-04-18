@@ -65,7 +65,7 @@ body {
   border: 2.5px solid #2b2c2c;
   border-radius: 6px;
   padding: 0.5rem;
-  box-shadow: 3px 3px 5px #000000;
+  /* box-shadow: 3px 3px 5px #000000; */
   margin-bottom: 2.6rem;
 }
 
@@ -85,9 +85,10 @@ body {
 }
 
 .project-cardo:hover {
-  border: 1px solid var(--main-link-color);
-  box-shadow: 16px 16px 5px #111213;
-  background-color: #131415;
+  border: 2.5px solid var(--main-link-color);
+  box-shadow: 6px 6px 1px #a1a1a1;
+  /* background-color: #131415; */
+  /* box-shadow: 8px 8px 2px #d0d0d0; */
 }
 
 figure {
@@ -399,30 +400,10 @@ p {
   font-size: 1.2rem;
 }
 
-/* .about-section-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 0 auto;
-} */
-
-.about-me p,
-.skills ul li {
-  color: hsl(0deg, 0%, 100%);
-  /* color: var(--main-text-color); */
-}
-/* 
-.about-me-wrapper {
-  width: clamp(45ch, 50%, 75ch);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-} */
-
 .about-me p {
   font-size: 1.2rem;
   margin-top: 1rem;
+  color: hsl(0deg, 0%, 100%);
 }
 
 .about-me {
@@ -497,6 +478,7 @@ p {
 }
 
 .skills ul li {
+  color: hsl(0deg, 0%, 100%);
   padding: 0.4rem;
   font-size: 1rem;
   border: 1px solid var(--mainBorderColor-dark);
@@ -515,10 +497,6 @@ p {
 .skills ul li i {
   color: var(--main-text-color);
 }
-
-/* .skills ul li i:hover {
-  color: var(--main-link-color);
-} */
 
 .skills ul li:hover i {
   animation: arrow 0.3s 1 0.5s;
@@ -832,6 +810,10 @@ footer {
 
   .short-bio {
     font-size: 1rem;
+  }
+
+  .skills {
+    margin-top: 2rem;
   }
 
   .line-break {
