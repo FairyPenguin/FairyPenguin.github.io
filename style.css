@@ -146,6 +146,7 @@ figure {
   align-items: center;
   padding-left: 1rem;
   margin-bottom: 1rem;
+  position: relative;
 }
 
 .view-project {
@@ -162,21 +163,18 @@ figure {
   display: inline-block;
   height: 6px;
   width: 0;
+  top: 20px;
   z-index: -1;
   transition: width 0.5s;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   background-color: var(--mainLinkColor-dark);
-
-  /* background-color: #898a8a; */
-
   border-radius: 22px 87px 22px 87px;
   opacity: 0.5;
 }
 
 .project-links:hover #highlight {
-  /* width: 150px; */
   width: 96px;
-  transform: translate(4px, 28px);
+  /* transform: translate(4px, 28px); */
 }
 
 .project-links a {
@@ -842,7 +840,7 @@ span a:hover i {
   }
 
   .bar {
-    height: 5px;
+    height: 4px;
     width: 100%;
     background-color: var(--main-text-color);
     border-radius: 12px;
