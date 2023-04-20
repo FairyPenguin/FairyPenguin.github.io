@@ -107,6 +107,13 @@ figure {
   border-radius: 5px;
 }
 
+.project-content {
+  flex: 1;
+  font-size: 1.1rem;
+  color: var(--secondaryTextColor-dark);
+  font-weight: 500;
+}
+
 .proj-title {
   padding: 4px 2px;
   /* color: var(--main-link-color); */
@@ -115,13 +122,6 @@ figure {
 
 .proj-title:hover {
   color: var(--main-link-color);
-}
-
-.project-content {
-  flex: 1;
-  font-size: 1.1rem;
-  color: var(--secondaryTextColor-dark);
-  font-weight: 500;
 }
 
 .proj-description {
