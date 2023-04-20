@@ -103,6 +103,7 @@ figure {
 
 .project-image {
   width: 100%;
+  max-width: 100%;
   object-fit: contain;
   border-radius: 5px;
 }
@@ -235,7 +236,7 @@ header {
   margin-top: 1rem;
   margin-right: auto;
   margin-left: auto;
-  box-shadow: 5px 10px 0px #2b2c2c;
+  box-shadow: 5px 4px 0px #2b2c2c;
 }
 
 header:hover {
@@ -305,6 +306,12 @@ header:hover {
   font-size: 1rem;
   font-weight: 600;
   color: var(--secondaryTextColor-dark);
+  text-decoration: none;
+}
+
+.nav li a:active {
+  background: yellow;
+  color: #f00;
   text-decoration: none;
 }
 
@@ -750,7 +757,6 @@ span a:hover i {
   color: var(--main-link-color);
 } */
 
-.built-with span,
 .astro:hover {
   color: var(--main-link-color);
   animation: Astro 5s 0.5s ease-in;
@@ -762,7 +768,49 @@ span a:hover i {
   }
 
   100% {
-    transform: translateY(-200px) rotate(-45deg);
+    transform: translateY(-230px) rotate(-45deg);
+
+    /* transform: translateY(25px); */
+  }
+}
+
+.netlify:hover {
+  color: var(--main-link-color);
+  animation: Netlify 5s 0.5s ease-in;
+}
+
+@keyframes Netlify {
+  0% {
+    transform: rotate(45deg) translateY(-5px);
+  }
+
+  50% {
+    transform: translateY(-100px) rotate(180deg);
+  }
+
+  100% {
+    transform: translateY(-75px) rotate(-90deg);
+
+    /* transform: translateY(25px); */
+  }
+}
+
+.ice-cream-stick:hover {
+  color: var(--main-link-color);
+  animation: IceCream 5s 0.5s ease-in;
+}
+
+@keyframes IceCream {
+  0% {
+    transform: rotate(-45deg) translateY(-5px);
+  }
+
+  50% {
+    transform: translateY(-100px) rotate(180deg);
+  }
+
+  100% {
+    transform: translateY(-75px) rotate(-90deg);
 
     /* transform: translateY(25px); */
   }
