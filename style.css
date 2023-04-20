@@ -151,20 +151,23 @@ figure {
 .project-links #highlight {
   position: absolute;
   display: inline-block;
-  height: 35px;
+  height: 15px;
   width: 0;
   z-index: -1;
   transition: width 0.5s;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-  /* background-color: var(--mainBorderColor-dark); */
-  border-radius: 6px;
+  background-color: var(--mainLinkColor-dark);
+
+  /* background-color: #898a8a; */
+
+  border-radius: 22px 87px 22px 87px;
   opacity: 0.5;
 }
 
 .project-links:hover #highlight {
   /* width: 150px; */
-  width: 182px;
-  transform: translate(-10px, -5px);
+  width: 126px;
+  transform: translate(-10px, 12px);
 }
 
 .project-links a {
@@ -180,7 +183,7 @@ figure {
 .project-links i {
   font-size: 1rem;
   padding-top: 5px;
-  transition: all 0.5s ease-out;
+  transition: all 2s ease-in-out;
 }
 
 #second-arrow {
