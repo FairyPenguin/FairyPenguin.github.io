@@ -148,10 +148,19 @@ figure {
   margin-bottom: 1rem;
 }
 
+.view-project {
+  display: flex;
+  align-items: baseline;
+}
+
+.view-project span {
+  margin-right: 0.4rem;
+}
+
 .project-links #highlight {
   position: absolute;
   display: inline-block;
-  height: 15px;
+  height: 6px;
   width: 0;
   z-index: -1;
   transition: width 0.5s;
@@ -166,8 +175,8 @@ figure {
 
 .project-links:hover #highlight {
   /* width: 150px; */
-  width: 126px;
-  transform: translate(-10px, 12px);
+  width: 96px;
+  transform: translate(4px, 28px);
 }
 
 .project-links a {
@@ -181,9 +190,9 @@ figure {
 } */
 
 .project-links i {
-  font-size: 1rem;
-  padding-top: 5px;
-  transition: all 2s ease-in-out;
+  font-size: 0.8rem;
+  /* padding-top: 15px; */
+  transition: all 2s linear;
 }
 
 #second-arrow {
@@ -192,13 +201,13 @@ figure {
 
 .project-links:hover i {
   /* animation: view-project 1s 1 0.5s; */
-  transform: translateX(3px);
+  transform: translateX(9px);
   color: var(--main-link-color);
 }
 
 .project-links:hover #second-arrow {
   /* animation: view-project 1s 1 0.5s; */
-  transform: translateX(1px);
+  transform: translateX(9px);
   opacity: 1;
 }
 
@@ -725,15 +734,39 @@ footer {
   font-size: 1rem;
 }
 
-.built-with a {
+.built-with span,
+a {
   text-decoration: none;
   color: inherit;
   transition: all 200ms ease-out;
 }
 
-.built-with a:hover {
-  color: var(--main-link-color);
+.built-with span {
+  transition: all 1s ease-out;
+}
+
+/* .built-with,
+span a:hover i {
   font-weight: bold;
+  color: var(--main-link-color);
+} */
+
+.built-with span,
+.astro:hover {
+  color: var(--main-link-color);
+  animation: Astro 5s 0.5s ease-in;
+}
+
+@keyframes Astro {
+  0% {
+    transform: rotate(-45deg) translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(-200px) rotate(-45deg);
+
+    /* transform: translateY(25px); */
+  }
 }
 
 /* FOOOOOOOOOOTER  */
