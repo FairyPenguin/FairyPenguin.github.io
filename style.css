@@ -156,6 +156,7 @@ figure {
 
 .view-project span {
   margin-right: 0.4rem;
+  color: hsl(0deg, 0%, 100%);
 }
 
 .project-links #highlight {
@@ -163,7 +164,7 @@ figure {
   display: inline-block;
   height: 6px;
   width: 0;
-  top: 20px;
+  top: 28px;
   z-index: -1;
   transition: width 0.5s;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
