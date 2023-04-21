@@ -734,10 +734,13 @@ footer {
 .copyright {
   text-align: left;
   color: var(--secondaryTextColor-dark);
-  border-top: 1px solid var(--mainBorderColor-dark);
+  border-top: 4px solid #2b2c2c;
   margin: 4rem 0px 0px 0px;
   padding: 1.5rem 1rem;
   font-size: 1rem;
+}
+.copyright:hover {
+  border-top: 1px solid var(--mainLinkColor-dark);
 }
 
 .built-with span,
@@ -751,6 +754,15 @@ a {
   transition: all 1s ease-out;
 }
 
+.Astro:hover a {
+  color: var(--main-link-color);
+  text-decoration: underline;
+}
+
+.Astro:hover i {
+  color: var(--main-link-color);
+  animation: Astro 5s 0.5s linear;
+}
 /* .built-with,
 span a:hover i {
   font-weight: bold;
