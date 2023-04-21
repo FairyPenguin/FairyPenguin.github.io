@@ -625,9 +625,9 @@ form {
   font-size: 1.2rem;
 }
 
-.form-upper-text-quote {
-  /* font-size: 3rem; */
-}
+/* .form-upper-text-quote {
+  font-size: 3rem;
+} */
 
 fieldset {
   border: none;
@@ -759,7 +759,7 @@ span a:hover i {
 
 .astro:hover {
   color: var(--main-link-color);
-  animation: Astro 5s 0.5s ease-in;
+  animation: Astro 5s 0.5s linear;
 }
 
 @keyframes Astro {
@@ -767,8 +767,12 @@ span a:hover i {
     transform: rotate(-45deg) translateY(-5px);
   }
 
+  50% {
+    transform: translateY(-100px) rotate(-45deg);
+  }
+
   100% {
-    transform: translateY(-230px) rotate(-45deg);
+    transform: translateY(-5px) rotate(-45deg);
 
     /* transform: translateY(25px); */
   }
@@ -776,7 +780,7 @@ span a:hover i {
 
 .netlify:hover {
   color: var(--main-link-color);
-  animation: Netlify 5s 0.5s ease-in;
+  animation: Netlify 5s 0.5s ease-in-out;
 }
 
 @keyframes Netlify {
@@ -789,7 +793,7 @@ span a:hover i {
   }
 
   100% {
-    transform: translateY(-75px) rotate(-90deg);
+    transform: translateY(-7px) rotate(-90deg);
 
     /* transform: translateY(25px); */
   }
@@ -810,7 +814,7 @@ span a:hover i {
   }
 
   100% {
-    transform: translateY(-75px) rotate(-90deg);
+    transform: translateY(-7px) rotate(-90deg);
 
     /* transform: translateY(25px); */
   }
