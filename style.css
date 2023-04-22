@@ -647,8 +647,12 @@ p {
 .post-tags {
   display: flex;
   gap: 0.2rem;
+  color: #5eddac;
 }
 
+.post-date {
+  color: #5eddac;
+}
 .article-summary {
   color: var(--secondaryTextColor-dark);
   margin-bottom: 1rem;
