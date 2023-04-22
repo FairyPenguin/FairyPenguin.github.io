@@ -151,14 +151,15 @@ figure {
 .project-links #highlight {
   position: absolute;
   display: inline-block;
-  height: 6px;
+  height: 4px;
   width: 0;
   top: 28px;
+  left: 20px;
   z-index: -1;
   transition: width 0.5s;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   background-color: var(--mainLinkColor-dark);
-  border-radius: 22px 87px 22px 87px;
+  border-radius: 100px 87px 22px 87px;
   opacity: 0.5;
 }
 
@@ -612,8 +613,19 @@ p {
 .featured-post {
   padding: 1.2rem;
   border-radius: 0.25rem;
-  border: 1px solid var(--mainBorderColor-dark);
-  background-color: #0f1011;
+  border: 5px solid var(--mainBorderColor-dark);
+  /* background-color: ; */
+  box-shadow: 0px 0px 0px var(--main-link-color);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.featured-post:hover {
+  transform: translateY(-12px);
+  box-shadow: 0px 1.8px 5px 2px var(--main-link-color);
+}
+
+.featured-post:hover .post-title {
+  color: var(--main-link-color);
 }
 
 .article-summary {
@@ -628,6 +640,7 @@ p {
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 0.4rem;
+  color: var(--secondaryTextColor-dark);
 }
 
 .post-tags {
