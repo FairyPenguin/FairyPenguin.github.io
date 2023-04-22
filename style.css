@@ -215,11 +215,11 @@ figure {
   align-items: center;
 }
 
-.view-all-peojects h2 {
+.headline {
   border-bottom: 1px dashed rgb(43, 44, 44);
 }
 
-.view-all-peojects:hover h2 {
+.view-all-peojects:hover .headline {
   border-bottom: 1px dashed var(--main-link-color);
   /* border-top: 1px ridge #d0d0d0; */
   border-radius: 0 0 0 0px;
@@ -609,8 +609,16 @@ p {
 
 /* *==================Posts-Section-Start==================* */
 
-.featured-post{
-  background-color: ;
+.featured-post {
+  padding: 1.2rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--mainBorderColor-dark);
+  background-color: #0f1011;
+}
+
+.article-summary {
+  color: var(--secondaryTextColor-dark);
+  margin-bottom: 0.4rem;
 }
 
 .post-upper-row {
