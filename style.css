@@ -210,7 +210,7 @@ figure {
   }
 }
 
-.view-all-peojects {
+.view-all-projects {
   display: flex;
   justify-content: end;
   align-items: center;
@@ -220,27 +220,27 @@ figure {
   border-bottom: 1px dashed rgb(43, 44, 44);
 }
 
-.view-all-peojects:hover .headline {
+.view-all-projects:hover .headline {
   border-bottom: 1px dashed var(--main-link-color);
 }
 
-.view-all-peojects h2 {
+.view-all-projects h2 {
   display: flex;
   align-items: end;
   gap: 0.4rem;
 }
 
-.view-all-arrow {
+.view-all-projects-arrow {
   color: var(--secondaryTextColor-dark);
   transition: transform 0.8s ease-in-out;
 }
 
-.view-all-peojects:hover .view-all-arrow {
+.view-all-projects:hover .view-all-projects-arrow {
   transform: skewX(20deg);
   color: var(--main-link-color);
 }
 
-.view-all-peojects:hover .headline {
+.view-all-projects:hover .headline {
   color: var(--main-link-color);
 }
 
@@ -646,7 +646,7 @@ p {
 
 .post-tags {
   display: flex;
-  gap: 0.4rem;
+  gap: 0.2rem;
 }
 
 .article-summary {
@@ -683,6 +683,37 @@ p {
   opacity: 1;
 }
 
+.view-all-posts {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.view-all-posts h2 {
+  display: flex;
+  align-items: end;
+  gap: 0.4rem;
+}
+
+.headline {
+  border-bottom: 1px dashed rgb(43, 44, 44);
+}
+
+.view-all-posts:hover .headline {
+  border-bottom: 1px dashed var(--main-link-color);
+}
+.view-all-posts-arrow {
+  color: var(--secondaryTextColor-dark);
+  transition: transform 0.8s ease-in-out;
+}
+.view-all-posts:hover .view-all-posts-arrow {
+  transform: skewX(20deg);
+  color: var(--main-link-color);
+}
+
+.view-all-posts:hover .headline {
+  color: var(--main-link-color);
+}
 /* *==================Posts-Section-End==================* */
 
 /*  =========FORM=======  */
