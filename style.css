@@ -216,11 +216,11 @@ figure {
 }
 
 .view-all-peojects h2 {
-  border-bottom: 2px dashed rgb(43, 44, 44);
+  border-bottom: 1px dashed rgb(43, 44, 44);
 }
 
 .view-all-peojects:hover h2 {
-  border-bottom: 2px dashed var(--main-link-color);
+  border-bottom: 1px dashed var(--main-link-color);
   /* border-top: 1px ridge #d0d0d0; */
   border-radius: 0 0 0 0px;
 }
@@ -606,6 +606,28 @@ p {
 /* ==================Projects-Section-Start================== */
 
 /* ==================Projects-Section-End================== */
+
+/* *==================Posts-Section-Start==================* */
+
+.featured-post{
+  background-color: ;
+}
+
+.post-upper-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.post-tags {
+  display: flex;
+  gap: 0.4rem;
+}
+
+/* *==================Posts-Section-End==================* */
 
 /*  =========FORM=======  */
 
