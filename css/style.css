@@ -803,13 +803,6 @@ a {
   position: relative;
 }
 
-.stick-2 {
-  position: absolute;
-  left: 192px;
-  visibility: hidden;
-  top: 4px;
-}
-
 .ICE-CREAM:hover span {
   color: var(--main-link-color);
 }
