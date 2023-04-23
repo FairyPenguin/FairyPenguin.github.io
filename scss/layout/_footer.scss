@@ -58,12 +58,9 @@ a {
   position: relative;
 }
 
-// .stick-2 {
-//   position: absolute;
-//   left: 192px;
-//   visibility: hidden;
-//   top: 4px;
-// }
+.stick-2 {
+  visibility: hidden;
+}
 
 .ICE-CREAM:hover span {
   color: var(--main-link-color);
@@ -115,16 +112,17 @@ a {
   animation: IceCream 5s 0.5s ease-in;
 }
 
-// @keyframes IceCream {
-//   0% {
-//     transform: rotate(45deg) translateX(15px);
-//   }
-//   50% {
-//     transform: translateY(-30px) rotate(-90deg);
-//   }
-//   100% {
-//     transform: translateY(0px) rotate(90deg);
-//     /* transform: translateY(25px); */
-//   }
-// }
+@keyframes IceCream {
+  0% {
+    transform: rotate(45deg) translateX(15px);
+  }
+  50% {
+    transform: translateY(-30px) rotate(-90deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(90deg);
+    /* transform: translateY(25px); */
+  }
+}
+
 /* FOOOOOOOOOOTER  */
