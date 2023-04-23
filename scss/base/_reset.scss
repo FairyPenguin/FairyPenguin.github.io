@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===============================Global Styles=============================== */
+li {
+  list-style: none;
+  line-height: 1.5em;
+}
+
+section {
+  margin: 1.5rem;
+}
+
+h1,
+h2,
+h3 {
+  padding: 8px 2px;
+}
+
+p {
+  line-height: 1.75rem;
+}
+
+/*---------------- SCROLLBAR Styles-------------------- */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: hsl(240, 4.8%, 4.1%);
+  /* box-shadow: 0 0 10px #000 inset; */
+}
+
+::-webkit-scrollbar-thumb {
+  /* background-color: var(--mainLinkColor-dark); */
+  border-radius: 20px;
+  height: 90px;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #424344;
+  /* background-color: transparent; */
+  /* border-top: 20px solid hsla(219, 100%, 50%, 1);
+  border-bottom: 20px solid hsla(219, 100%, 50%, 1) */
+  /* border-top: 60px solid hsla(240, 4.8%, 4.1%, 1);
+  border-bottom: 60px solid hsla(240, 4.8%, 4.1%, 1) */
+  /*or any height and color you want*/
+}
+
+/* ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--main-link-color);
+  border-radius: 20px;
+} */

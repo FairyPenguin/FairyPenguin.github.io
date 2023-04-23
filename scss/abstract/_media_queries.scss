@@ -1,0 +1,193 @@
+/* ===============================Media Queries=============================== */
+@media screen and (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+}
+/* This media query for {Hamburger Menu} and screen with max-width:768px */
+@media screen and (max-width: 768px) {
+  /* This can stop the touch functionality on mobile screens */
+  /* body {
+      touch-action: none;
+    } */
+  .nav {
+    display: flex;
+  }
+  .nav-list {
+    position: fixed;
+    left: 0;
+    top: 0px;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 2rem 0px 6rem 32px;
+    margin: 0px 0px 2rem 0px;
+    width: 100%;
+    display: none;
+    transition: 0.6s;
+    background: hsla(210, 30%, 8%, 0.85);
+    backdrop-filter: blur(8px);
+  }
+  .nav-list a {
+    display: block;
+    padding: 0.8rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--main-text-color);
+    text-decoration: none;
+  }
+  .navbar-toggler {
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 48px;
+    z-index: 2;
+  }
+  .hamburger {
+    position: absolute;
+    bottom: 0.25rem;
+    left: -0.3rem;
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.4s ease-in;
+  }
+  .bar {
+    height: 4px;
+    width: 100%;
+    background-color: var(--main-text-color);
+    border-radius: 12px;
+    margin-bottom: 0.5rem;
+    transition: 0.4s;
+    opacity: 1;
+  }
+  .toggle-check-box:checked ~ nav .nav-list {
+    display: flex;
+  }
+  /* Menu Bars Transition Moves */
+  .toggle-check-box:checked ~ nav .navbar-toggler .bar:nth-child(1) {
+    position: absolute;
+    /* transform: rotate(45deg); */
+    transform: translateY(5px);
+  }
+  .toggle-check-box:checked ~ nav .navbar-toggler .bar:nth-child(2) {
+    position: absolute;
+    transform: translateY(10px);
+  }
+  .toggle-check-box:checked ~ nav .navbar-toggler .bar:nth-child(3) {
+    /* transform: rotate(-45deg); */
+    position: absolute;
+    transform: translateY(20px);
+  }
+  .toggle-check-box:checked ~ nav .navbar-toggler .hamburger {
+    opacity: 100;
+    z-index: 1;
+  }
+  .toggle-check-box:checked ~ nav .navbar-toggler .bar {
+    z-index: -1;
+    opacity: 0;
+  }
+  .nav-list {
+    display: none;
+  }
+}
+/* This media query for {navabr} and screen with max-width:675px */
+@media screen and (max-width: 675px) {
+  /* .nav {
+      display: none;
+    } */
+  /* 
+    body {
+      overflow-y: hidden;
+    }
+    .main-container {
+      overflow-y: hidden;
+    } */
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .title {
+    font-size: clamp(1.5rem, 50%, 2.5rem);
+  }
+  .short-bio {
+    font-size: 1rem;
+  }
+  .skills {
+    margin-top: 2rem;
+  }
+  .line-break {
+    width: clamp(280px, 50%, 800px);
+  }
+  label {
+    display: block;
+    margin: 0.5rem 0.2rem 0.5rem 0.2rem;
+    font-size: 1rem;
+  }
+  .main-container {
+    max-width: 800px;
+    padding-top: 0px;
+    margin: 0px auto;
+  }
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.2rem;
+  }
+  .form-sction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-container {
+    width: clamp(290px, 80%, 450px);
+    margin: 2rem 0.4rem 2rem 0.4rem;
+    padding: 0.5rem 0.3rem;
+  }
+  /* //   END   // */
+}
+@media screen and (max-width: 480px) {
+  .about-me {
+    border-left: 1px solid var(--mainBorderColor-dark);
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: clamp(30ch, 50%, 60ch);
+    /* width: 100%; */
+    /* width: clamp(45ch, 50%, 60ch); */
+  }
+  /* Nav on/off over-flow test */
+  /* .nav {
+      display: none;
+    } */
+  /* header on/off over-flow test */
+  /* header {
+      display: none;
+    } */
+  /* hero on/off over-flow test */
+  /* .hero {
+      display: none;
+    } */
+  /* about-me on/off over-flow test */
+  /* .about-me {
+      display: none;
+    } */
+  /* .projects-container {
+      display: none;
+    } */
+  /* .form-sction {
+      display: none;
+    } */
+  /* footer {
+      display: none;
+    } */
+  /* END */
+}

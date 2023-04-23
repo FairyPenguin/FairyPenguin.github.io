@@ -1,0 +1,128 @@
+header {
+  display: flex;
+  align-items: center;
+  height: 3.75rem;
+  width: auto;
+  padding: 0.4px 2rem;
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 5px 4px 0px #2b2c2c;
+}
+
+header:hover {
+  box-shadow: 0 1px 0 var(--mainLinkColor-dark);
+}
+
+.Logo-text {
+  text-decoration: none;
+  display: flex;
+}
+
+.logo-text-span {
+  display: inline-block;
+  letter-spacing: -1px;
+  /* font-size: 1.5rem; */
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--mainLinkColor-dark);
+  /* color: var(--main-link-color); */
+}
+
+.logo-text-span.A {
+  color: var(--secondaryTextColor-dark);
+  transform: rotate(20deg);
+}
+
+/* .logo-text-span.Aziz {
+    color: var(--secondaryTextColor-dark);
+    transform: rotate(-deg);
+  } */
+.logo-text-span.A:hover {
+  color: var(--main-link-color);
+  /* transform: translate(5px, 10px); */
+}
+
+.logo-text-span.Aziz:hover {
+  color: var(--secondaryTextColor-dark);
+  /* transform: translate(5px, 10px); */
+}
+
+.logo-text-span.Mahmoud:hover {
+  color: var(--secondaryTextColor-dark);
+  /* transform: translate(5px, 10px); */
+}
+
+.nav-open {
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+
+.toggle-check-box {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 0.8rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list a {
+  display: block;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--secondaryTextColor-dark);
+  text-decoration: none;
+}
+
+// .nav li a:active {
+//   background: yellow;
+//   color: #f00;
+//   text-decoration: none;
+// }
+
+.nav-list a:hover {
+  color: var(--main-link-color);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.dark-mode-toggle {
+  /* z-index: 100; */
+  display: block;
+  background: transparent;
+  /* border-radius: 5px; */
+  cursor: pointer;
+  opacity: 0.7;
+  /* color: var(--secondaryTextColor-dark); */
+  /* color: hsl(0deg, 0%, 100%); */
+  border: none;
+  padding: 0.25rem;
+  outline: none;
+}
+
+.inner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-wrapper > span {
+  font-size: 1.2rem;
+  color: var(--main-text-color);
+}
+
+.dark-mode-toggle:hover {
+  opacity: 1;
+  /* color: hsl(0deg, 0%, 100%); */
+  /* fill: currentColor; */
+}

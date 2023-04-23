@@ -1,0 +1,47 @@
+.skills {
+  margin-top: 5rem;
+}
+
+.skills-wrapper ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.skills ul li {
+  color: hsl(0, 0%, 100%);
+  padding: 0.4rem;
+  font-size: 1rem;
+  border: 1px solid var(--mainBorderColor-dark);
+  border-radius: 5px;
+  margin-bottom: 0.4rem;
+  line-height: 2rem;
+}
+
+.skills ul li:hover {
+  border-top: 1px solid var(--main-link-color);
+  border-left: 1px solid var(--main-link-color);
+  border-bottom: 1px solid var(--main-link-color);
+  border-right: 1px solid var(--main-link-color);
+}
+
+.skills ul li i {
+  color: var(--main-text-color);
+}
+
+.skills ul li:hover i {
+  animation: arrow 0.3s 1 0.5s;
+  color: var(--main-link-color);
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateX(-25px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+/* ==================Skills End================== */
