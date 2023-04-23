@@ -1,0 +1,25 @@
+.hero img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  max-width: 100%;
+  /* box-sizing: content-box; */
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 38px;
+}
+
+.short-bio {
+  /* font-size: 20px; */
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}

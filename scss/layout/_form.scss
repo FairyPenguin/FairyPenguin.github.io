@@ -1,0 +1,127 @@
+/*  =========FORM=======  */
+.form-sction {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-container {
+  /* width: clamp(275px, 50%, 500px); */
+  width: clamp(300px, 60%, 500px);
+  height: auto;
+  /* max-width: 500px;
+    min-width: 350px; */
+  margin: 2rem auto;
+  padding: 0.5rem 0.8rem;
+  background-color: #0a0a0b;
+  border-radius: 0.5rem;
+  /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+  border: 1px solid #0a0a0b;
+}
+
+.form-container:hover {
+  border: 1px solid var(--main-link-color);
+}
+
+form {
+  font-family: inherit;
+}
+
+.form-upper-text {
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.form-blockquote {
+  font-size: 1.2rem;
+}
+
+/* .form-upper-text-quote {
+    font-size: 3rem;
+  } */
+fieldset {
+  border: none;
+  padding: 0.5rem 0;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0.2rem 0.5rem 0.2rem;
+  font-size: 1.1rem;
+}
+
+#first-name,
+#email,
+#subject {
+  background-color: #000;
+  outline: none;
+  color: #fff;
+  border-radius: 0.3rem;
+  margin: 0.4rem 0 0.3rem 0;
+  width: 100%;
+  min-height: 3.2rem;
+  text-indent: 0.7rem;
+  /* border: 5px solid #131415; */
+  /* outline: solid #0f1011 1px; */
+  border: 5px solid #2b2c2c;
+  text-indent: 1.5rem;
+}
+
+#first-name,
+#email {
+  font-size: 1.25rem;
+}
+
+/* #first-name:focus {
+    border-bottom: 1px solid var(--main-link-color);
+  } */
+/* .personal-info:focus-within label[for="first-name"] {
+    color: var(--mainLinkColor-dark);
+  }
+  
+  .personal-info:focus-within label[for="email"] {
+    color: var(--mainLinkColor-dark);
+  } */
+/* .personal-info:focus-within label[for="subject"] {
+    color: var(--mainLinkColor-dark);
+  } */
+textarea {
+  /* min-width: 250px; */
+  min-height: 175px;
+  max-width: 100%;
+  height: 190px;
+  resize: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.8rem;
+  word-spacing: -4px;
+}
+
+input[type="submit"] {
+  font-weight: bold;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  width: 120px;
+  height: 2.8rem;
+  margin: 0.8rem auto 0.8rem auto;
+  font-size: 1.1rem;
+  min-width: 80px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 0.3rem;
+  outline: none;
+  /* border: 5px solid #131415; */
+  border: 5px solid #2b2c2c;
+}
+
+input[type="submit"]:hover {
+  border: 1px solid var(--main-link-color);
+}
+
+/*  =========FORM=======  */

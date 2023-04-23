@@ -1,0 +1,131 @@
+/* FOOOOOOOOOOTER  */
+footer {
+  background-color: #0a0a0b;
+  padding: 4rem 0px 0px 0px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2.5rem;
+}
+
+.copyright {
+  text-align: left;
+  color: var(--secondaryTextColor-dark);
+  border-top: 4px solid #2b2c2c;
+  margin: 4rem 0px 0px 0px;
+  padding: 1.5rem 1rem;
+  font-size: 1rem;
+}
+
+.copyright:hover {
+  border-top: 1px solid var(--mainLinkColor-dark);
+}
+
+.built-with span,
+a {
+  text-decoration: none;
+  color: inherit;
+  /* transition: all 200ms ease-out; */
+}
+
+/* .built-with span {
+    transition: all 1s ease-out;
+  } */
+/* ********** Icons & Text Animation ***************** */
+.Astro:hover a {
+  color: var(--main-link-color);
+  text-decoration: underline;
+}
+
+.Astro:hover i {
+  color: var(--main-link-color);
+  animation: Astro 5s 0.5s linear;
+}
+
+.Netlify:hover a {
+  text-decoration: underline;
+  color: var(--main-link-color);
+}
+
+.Netlify:hover i {
+  color: var(--main-link-color);
+  animation: Netlify 5s 0.5s linear;
+}
+
+.ICE-CREAM {
+  position: relative;
+}
+
+.stick-2 {
+  position: absolute;
+  left: 192px;
+  /* left: 500px; */
+  visibility: hidden;
+  top: 4px;
+}
+
+.ICE-CREAM:hover span {
+  color: var(--main-link-color);
+}
+
+.ICE-CREAM:hover i {
+  color: var(--main-link-color);
+  animation: IceCream 5s 0.5s linear;
+  visibility: visible;
+}
+
+/* ********** Only Icons Animation ***************** */
+.astro:hover {
+  color: var(--main-link-color);
+  animation: Astro 5s 0.5s linear;
+}
+
+@keyframes Astro {
+  0% {
+    transform: rotate(-45deg) translateY(-5px);
+  }
+  50% {
+    transform: translateY(-100px) rotate(-45deg);
+  }
+  100% {
+    transform: translateY(-5px) rotate(-45deg);
+    /* transform: translateY(25px); */
+  }
+}
+.netlify:hover {
+  color: var(--main-link-color);
+  animation: Netlify 5s 0.5s ease-in-out;
+}
+
+@keyframes Netlify {
+  0% {
+    transform: rotate(45deg) translateY(-5px);
+  }
+  50% {
+    transform: translateY(-100px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(-7px) rotate(-90deg);
+    /* transform: translateY(25px); */
+  }
+}
+.ice-cream-stick:hover {
+  color: var(--main-link-color);
+  animation: IceCream 5s 0.5s ease-in;
+}
+
+@keyframes IceCream {
+  0% {
+    transform: rotate(45deg) translateX(15px);
+  }
+  50% {
+    transform: translateY(-30px) rotate(-90deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(90deg);
+    /* transform: translateY(25px); */
+  }
+}
+/* FOOOOOOOOOOTER  */

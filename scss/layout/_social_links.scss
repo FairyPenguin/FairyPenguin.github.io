@@ -1,0 +1,30 @@
+.link-wrapper a {
+  color: var(--secondaryTextColor-dark);
+  text-decoration: none;
+}
+
+.link-wrapper a:hover {
+  color: var(--main-link-color);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.link-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+.contact-links i {
+  font-size: 1.3rem;
+  color: #0da2b8;
+  /* padding-left: 5px; */
+}

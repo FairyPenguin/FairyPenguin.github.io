@@ -1,0 +1,117 @@
+/* *==================Posts-Section-Start==================* */
+.featured-post {
+  padding: 1.2rem;
+  border-radius: 0.25rem;
+  border: 5px solid var(--mainBorderColor-dark);
+  /* background-color: ; */
+  box-shadow: 0px 0px 0px var(--main-link-color);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.featured-post:hover {
+  transform: translateY(-12px);
+  box-shadow: 0px 1.8px 5px 2px var(--main-link-color);
+}
+
+.featured-post:hover {
+  transform: translateY(-12px);
+  box-shadow: 0px 1.8px 5px 2px var(--main-link-color);
+}
+
+.featured-post:hover .read-more {
+  color: var(--main-link-color);
+}
+
+.featured-post:hover .post-title {
+  color: var(--main-link-color);
+}
+
+.post-upper-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+  color: var(--secondaryTextColor-dark);
+}
+
+.post-tags {
+  display: flex;
+  gap: 0.2rem;
+  color: #5eddac;
+}
+
+.post-date {
+  color: #5eddac;
+}
+
+.article-summary {
+  color: var(--secondaryTextColor-dark);
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  display: flex;
+  align-items: center;
+}
+
+.read-more-arrow {
+  padding-top: 4px;
+}
+
+.read-more i {
+  transition: all 2s linear;
+}
+
+#post-second-arrow {
+  opacity: 0;
+}
+
+.read-more:hover i {
+  /* animation: view-project 1s 1 0.5s; */
+  transform: translateX(9px);
+  color: var(--main-link-color);
+}
+
+.read-more:hover #post-second-arrow {
+  /* animation: view-project 1s 1 0.5s; */
+  transform: translateX(9px);
+  opacity: 1;
+}
+
+.view-all-posts {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.view-all-posts h2 {
+  display: flex;
+  align-items: end;
+  gap: 0.4rem;
+}
+
+.headline {
+  border-bottom: 1px dashed rgb(43, 44, 44);
+}
+
+.view-all-posts:hover .headline {
+  border-bottom: 1px dashed var(--main-link-color);
+}
+
+.view-all-posts-arrow {
+  color: var(--secondaryTextColor-dark);
+  transition: transform 0.8s ease-in-out;
+}
+
+.view-all-posts:hover .view-all-posts-arrow {
+  transform: skewX(20deg);
+  color: var(--main-link-color);
+}
+
+.view-all-posts:hover .headline {
+  color: var(--main-link-color);
+}
+
+/* *==================Posts-Section-End==================* */
