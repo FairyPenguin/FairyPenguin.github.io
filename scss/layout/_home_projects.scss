@@ -1,4 +1,4 @@
-.project-cardo {
+.project-card {
   display: flex;
   flex-direction: row;
   /* align-items: center; */
@@ -11,7 +11,7 @@
   border: 5px solid #2b2c2c;
 }
 
-.project-cardo:hover {
+.project-card:hover {
   border: 2px solid var(--main-link-color);
   box-shadow: none;
   /* background-color: #131415; */
@@ -19,12 +19,13 @@
   /* border: 2.5px solid #2b2c2c; */
 }
 
+//----------// Media Query //----------//
 @media screen and (max-width: 786px) {
   /* .projects-container {
       display: flex;
       flex-direction: column;
     } */
-  .project-cardo {
+  .project-card {
     display: flex;
     flex-direction: column;
   }
@@ -32,10 +33,11 @@
     display: flex;
     align-items: center;
     padding-left: 1rem;
-    margin-top: 3rem;
-    margin-bottom: 10rem;
   }
 }
+
+//----------// Media Query //----------//
+
 figure {
   flex: 1;
 }

@@ -213,6 +213,69 @@ header:hover {
   /* fill: currentColor; */
 }
 
+.about-me p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.about-me {
+  border-left: 1px solid var(--mainBorderColor-dark);
+  padding-left: 1.3rem;
+  /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+  /* width: clamp(45ch, 50%, 75ch); */
+  /* width: 100%; */
+  width: clamp(45ch, 75%, 75ch);
+  margin: 0px auto;
+}
+
+.about-me:hover {
+  border-left: 1px solid var(--mainLinkColor-dark);
+}
+
+/* @media only screen and (min-width: 1024px) {
+    .about-me {
+      width: 75%;
+      margin: 0 auto;
+    }
+  } */
+.about-name-text {
+  /* cursor: context-menu; */
+  font-size: 1.5rem;
+  color: var(--main-link-color);
+}
+
+.about-me h3 a {
+  text-decoration: none;
+}
+
+.full-about-me-desc {
+  border: 1px solid var(--mainBorderColor-dark);
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.full-about-me-desc a {
+  text-decoration: none;
+  color: var(--main-link-color);
+}
+
+.full-about-me-desc a:hover {
+  text-decoration: underline;
+}
+
+.Here-span:hover {
+  font-size: 1.6rem;
+  /* letter-spacing: 1.5px; */
+}
+
+.full-about-me-desc:hover {
+  border: 1px solid var(--mainLinkColor-dark);
+  /* font-weight: bold; */
+}
+
 .link-wrapper a {
   color: var(--secondaryTextColor-dark);
   text-decoration: none;
@@ -317,7 +380,7 @@ header:hover {
   }
 }
 /* ==================Skills End================== */
-.project-cardo {
+.project-card {
   display: flex;
   flex-direction: row;
   /* align-items: center; */
@@ -330,7 +393,7 @@ header:hover {
   border: 5px solid #2b2c2c;
 }
 
-.project-cardo:hover {
+.project-card:hover {
   border: 2px solid var(--main-link-color);
   box-shadow: none;
   /* background-color: #131415; */
@@ -343,7 +406,7 @@ header:hover {
       display: flex;
       flex-direction: column;
     } */
-  .project-cardo {
+  .project-card {
     display: flex;
     flex-direction: column;
   }
@@ -351,8 +414,6 @@ header:hover {
     display: flex;
     align-items: center;
     padding-left: 1rem;
-    margin-top: 3rem;
-    margin-bottom: 10rem;
   }
 }
 figure {
